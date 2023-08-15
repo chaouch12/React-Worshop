@@ -1,0 +1,45 @@
+.spaceBetween {
+
+  justify-content: space-between;
+}
+.bgDark {
+  background-color: black;
+}
+.btn {
+  all:unset;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color:black;
+  cursor: pointer;
+}
+.link{
+  all:unset;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #76bd21 !important;
+  color:white !important
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+.spaceAround {
+ 
+  justify-content: space-around;
+}
+.flex {
+  display:flex;
+}
+.gap-5{
+  gap: 5px;
+}
+.gap-20{
+  gap:20px
+}
+.alignCenter {
+  align-items: center;
+}
