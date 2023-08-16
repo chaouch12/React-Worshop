@@ -1,7 +1,12 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 function Main() {
+    const navigate = useNavigate()
+ const navigateTo=()=>{
+    navigate('/features')
+ }
+
     return (
         <div>
             <div>
@@ -11,11 +16,11 @@ function Main() {
                     <button className='btn btn-green'>Buy Now</button>
                 </div>
                 <div className='bgWhite spaceAround flex align-items-center'>
-                    <a href='/'>logo</a>
+                    <div onClick={()=> navigate('/')}>logo</div>
                     <div className='d-flex gap-20'>
                         <a>Demo</a>
-                        <a className='link' href='/features'>Features</a>
-                        <div>documents</div>
+                        <div className='link' onClick={navigateTo}>Features</div>
+                        <div className='link' onClick={() => navigate('documents')}>documents</div>
                     </div>
                     <button className='btn '>PURCHASE NOW</button>
                 </div>

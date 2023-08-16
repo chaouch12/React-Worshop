@@ -15,7 +15,9 @@ function App() {
         <Route path='/' element={<Main />}>
           <Route index element={<Home />} /> {/* 👈 Renders at /app/ */}
           <Route path="/features" element={<Features />} /> {/* 👈 Renders at /app/ */}
-          <Route path="/documents" element={<Documents />} /> {/* 👈 Renders at /app/ */}
+          <Route path="/documents" element={<Documents />} >
+            
+            </Route> {/* 👈 Renders at /app/ */}
         </Route>
         <Route path='/login' element={<Auth/>}/>
       </Routes>

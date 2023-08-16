@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function Documents() {
+  const navigate=useNavigate()
   return (
-    <div>Documents</div>
-  )
+    <div>
+      Documents
+      <button onClick={()=> navigate('/features')}>go to features</button>
+      <Outlet />
+    </div>
+  );
 }
 
-export default Documents
+export default Documents;
